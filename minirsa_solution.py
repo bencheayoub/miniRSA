@@ -25,10 +25,10 @@ C = 2205316413931134031074603746928247799030155221252519872650073010782049179856
 
 k = 0
 while True:
-    dec = find_invpow(N * k + C, 3)
+    dec = find_invpow(N * k + C, 3) # after we print the value of k we see that k = 0 that means we can replace 'N * K + c' by only 'C' and it give the same result.
     flag = long_to_bytes(dec)
     if b'pico':
        print(flag)
-        print(k)
+        print(k) 
        break
     k += 1
