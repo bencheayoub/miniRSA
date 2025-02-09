@@ -29,5 +29,6 @@ while True:
     flag = long_to_bytes(dec)
     if b'pico':
        print(flag)
+        print(k)
        break
     k += 1
